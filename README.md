@@ -51,13 +51,7 @@ The project code is mainly in `/stable_audio_tools` folder.
 
   Store the classes for LoVA model and its different components.
 
-  - factory.py: `create_model_from_config` function is used to instantiate a model class according to the configuration file .
-
-- `/stable_audio_tools/training`:
-
-  Store the code for LoVA model and its different components.
-
-  - training_wrapper.py: `DiffusionCondTrainingWrapper` is used for training with pytorch lightning.
+  
 
 
 
@@ -70,7 +64,7 @@ Demo code is available in demo.ipynb.
 
   ~~~python
   model_config_file = './stable_audio_tools/configs/model_config_vl30.json'
-  model_weight = './weight/epoch=60-step=2818.safetensor'
+  model_weight = './weight/epoch=60-step=2818.safetensors'
   ~~~
 
 - At the second step, input the mp4 video by changing `conditioning['feature']`
