@@ -1,0 +1,15 @@
+*.mp4
+*.wav
+*.pickle
+*.safetensors
+*.pt
+*.out
+*.ckpt
+
+default_config.yaml
+/build
+/lightning_logs
+/weight
+/report.pdf
+/__pycache__
+*/__pycache__
