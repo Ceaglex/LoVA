@@ -60,7 +60,7 @@ Demo code is available in demo.ipynb.
 
 - Download the model weight from url https://pan.baidu.com/s/1CdzPIqsAma5Bq5YEXpOARg?pwd=tkda and put it under `.\weight ` folder.
 
-- At the first step,  Modifing the model configuration json path (`model_config_file`) and model weight safetensor path (`model_weight`) .
+- At the first step,  Modifing the model configuration json path (`model_config_file`) and model weight safetensors path (`model_weight`) .
 
   ~~~python
   model_config_file = './stable_audio_tools/configs/model_config_vl30.json'
