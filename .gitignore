@@ -1,5 +1,3 @@
-*.mp4
-*.wav
 *.pickle
 *.safetensors
 *.pt
