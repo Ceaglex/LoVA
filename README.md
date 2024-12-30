@@ -1,5 +1,9 @@
 # LoVA: Long-Form Video-to-Audio Generation
 
+:confetti_ball: Our paper has been accepted by ICASSP 2025 !! :confetti_ball: 
+
+
+
 ![alt text](asset/structure3.png)
 
 Video-to-audio (V2A) generation is important for video editing and post-processing, enabling the creation of semantics-aligned audio for silent video. However, most existing methods focus on generating short-form audio for short video segment (less than 10 seconds), while giving little attention to the scenario of long-form video inputs. For current UNet-based diffusion V2A models, an inevitable problem when handling long-form audio generation is the inconsistencies within the final concatenated audio. In this paper, we first highlight the importance of long-form V2A problem. Besides, we propose LoVA, a novel model for Long-form Video-to-Audio generation. Based on the Diffusion Transformer (DiT) architecture, LoVA proves to be more effective at generating long-form audio compared to existing autoregressive models and UNet-based diffusion models.
@@ -51,7 +55,13 @@ The project code is mainly in `/stable_audio_tools` folder.
 
   Store the classes for LoVA model and its different components.
 
-  
+  - factory.py: `create_model_from_config` function is used to instantiate a model class according to the configuration file .
+
+- `/stable_audio_tools/training`:
+
+  Store the code for LoVA model and its different components.
+
+  - training_wrapper.py: `DiffusionCondTrainingWrapper` is used for training with pytorch lightning.
 
 
 
@@ -60,11 +70,11 @@ Demo code is available in demo.ipynb.
 
 - Download the model weight from url https://pan.baidu.com/s/1CdzPIqsAma5Bq5YEXpOARg?pwd=tkda and put it under `.\weight ` folder.
 
-- At the first step,  Modifing the model configuration json path (`model_config_file`) and model weight safetensors path (`model_weight`) .
+- At the first step,  Modifing the model configuration json path (`model_config_file`) and model weight safetensor path (`model_weight`) .
 
   ~~~python
   model_config_file = './stable_audio_tools/configs/model_config_vl30.json'
-  model_weight = './weight/epoch=60-step=2818.safetensors'
+  model_weight = './weight/epoch=60-step=2818.safetensor'
   ~~~
 
 - At the second step, input the mp4 video by changing `conditioning['feature']`
