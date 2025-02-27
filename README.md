@@ -1,8 +1,9 @@
 # LoVA: Long-Form Video-to-Audio Generation
 
+
 :confetti_ball: Our paper has been accepted by ICASSP 2025 !! :confetti_ball: 
 
-
+## Abstract
 
 ![alt text](asset/structure3.png)
 
@@ -55,13 +56,7 @@ The project code is mainly in `/stable_audio_tools` folder.
 
   Store the classes for LoVA model and its different components.
 
-  - factory.py: `create_model_from_config` function is used to instantiate a model class according to the configuration file .
-
-- `/stable_audio_tools/training`:
-
-  Store the code for LoVA model and its different components.
-
-  - training_wrapper.py: `DiffusionCondTrainingWrapper` is used for training with pytorch lightning.
+  
 
 
 
@@ -70,11 +65,13 @@ Demo code is available in demo.ipynb.
 
 - Download the model weight from url https://pan.baidu.com/s/1CdzPIqsAma5Bq5YEXpOARg?pwd=tkda and put it under `.\weight ` folder.
 
-- At the first step,  Modifing the model configuration json path (`model_config_file`) and model weight safetensor path (`model_weight`) .
+  （You can also download form google drive: https://drive.google.com/file/d/1cpm6g5ldQmhGABqW692MBYfykZ5agfti/view?usp=drive_link)
+
+- At the first step,  Modifing the model configuration json path (`model_config_file`) and model weight safetensors path (`model_weight`) .
 
   ~~~python
   model_config_file = './stable_audio_tools/configs/model_config_vl30.json'
-  model_weight = './weight/epoch=60-step=2818.safetensor'
+  model_weight = './weight/epoch=60-step=2818.safetensors'
   ~~~
 
 - At the second step, input the mp4 video by changing `conditioning['feature']`
