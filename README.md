@@ -65,7 +65,7 @@ Demo code is available in demo.ipynb.
 
 - Download the model weight from url https://pan.baidu.com/s/1CdzPIqsAma5Bq5YEXpOARg?pwd=tkda and put it under `.\weight ` folder.
 
-  （You can also download form google drive: https://drive.google.com/file/d/1cpm6g5ldQmhGABqW692MBYfykZ5agfti/view?usp=drive_link)
+  （You can also download from google drive: https://drive.google.com/file/d/1cpm6g5ldQmhGABqW692MBYfykZ5agfti/view?usp=drive_link)
 
 - At the first step,  Modifing the model configuration json path (`model_config_file`) and model weight safetensors path (`model_weight`) .
 
