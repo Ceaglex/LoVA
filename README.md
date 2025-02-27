@@ -91,3 +91,14 @@ Demo code is available in demo.ipynb.
 The current implementation of LoVA is relatively simple and requires further refactor due to time constraints. 
 
 We plan to provide a more polished and well-documented version of the code following acceptance.
+
+
+## Cite
+~~~
+@article{cheng2024lova,
+  title={LoVA: Long-form Video-to-Audio Generation},
+  author={Cheng, Xin and Wang, Xihua and Wu, Yihan and Wang, Yuyue and Song, Ruihua},
+  journal={arXiv preprint arXiv:2409.15157},
+  year={2024}
+}
+~~~
